@@ -7,11 +7,11 @@ const back = () => {
 };
 
 const hide = () => {
-  document.getElementById('caja').style.display = 'none';
+  document.getElementById('box').style.display = 'none';
   document.getElementById('show-button').style.display = 'inline-block';
 };
 
 const show = () => {
-  document.getElementById('caja').style.display = 'block';
+  document.getElementById('box').style.display = 'block';
   document.getElementById('show-button').style.display = 'none';
 };

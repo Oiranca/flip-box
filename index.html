@@ -6,28 +6,45 @@
     <meta name="description" content="HTML CSS Template" />
     <meta name="keywords" content="template, html, css" />
     <meta name="author" content="Your Name" />
-    <title>HTML CSS Template</title>
+    <title>Flip sencillo con JS</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="src/css/main.css" />
 
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   </head>
   <body>
-    <!-- Header -->
     <header>
-      <!-- Navigation content here -->
+      <h1>Flip Box</h1>
     </header>
 
-    <!-- Main Content -->
     <main>
-      <!-- Main content here -->
+      <div class="scene" id="caja">
+        <div class="card" id="card">
+          <!-- Front -->
+          <div class="box front">
+            <div class="title">FRENTE</div>
+            <div class="buttons">
+              <button onclick="spin()">Girar</button>
+              <button onclick="hide()">Desaparecer</button>
+            </div>
+          </div>
+
+          <!-- Back -->
+          <div class="box back">
+            <div class="title">ATRÁS</div>
+            <div class="buttons">
+              <button onclick="back()">Atrás</button>
+              <button onclick="hide()">Desaparecer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="show-button" onclick="show()" style="display: none">
+        Mostrar caja
+      </button>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <!-- Footer content here -->
-    </footer>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
